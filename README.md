@@ -27,7 +27,7 @@ La misma estructura CRUD existe para la tabla de apoyo `usuarios` (`UsuarioDao`)
 | Artefacto | Cómo se refleja en el código |
 |-----------|------------------------------|
 | Diagrama de clases | Clases `Usuario` y `Pqrs` del paquete `modelo`, con los enums `RolUsuario`, `TipoPqrs` y `EstadoPqrs`; la relación 1–N usuario → PQRS se implementa con la llave foránea `id_usuario`. |
-| Modelo relacional / SQL | `database/satinga_pqrs.sql` (base `satinga_db`, tablas `usuarios` y `pqrs`, normalizadas hasta 3FN, con llaves primarias, foráneas, únicas e índices). |
+| Modelo relacional / SQL | `database/satinga_pqrs.sql` (base `satinga_pqrs`, tablas `usuarios` y `pqrs`, normalizadas hasta 3FN, con llaves primarias, foráneas, únicas e índices). |
 | Casos de uso e historias de usuario | El ciudadano radica y consulta su PQRS; el funcionario la responde y cambia su estado; el administrador puede modificarla o eliminarla (menú del módulo). |
 | Prototipos / diseño | La interfaz web se construye sobre esta lógica; el menú de consola valida el módulo antes de conectarlo con el front-end. |
 | Plan de trabajo (AA1-EV01) | Git para versionamiento, Maven para dependencias y GitHub como repositorio remoto. |

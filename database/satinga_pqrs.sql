@@ -4,11 +4,11 @@
 -- Ejecutar en MySQL Workbench o phpMyAdmin antes de correr el proyecto
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS satinga_db
+CREATE DATABASE IF NOT EXISTS satinga_pqrs
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE satinga_db;
+USE satinga_pqrs;
 
 -- ------------------------------------------------------------
 -- Tabla: usuarios (ciudadanos, funcionarios y administradores)
